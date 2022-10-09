@@ -12,20 +12,19 @@ function Navbar(){
                 <span className="navbar-toggler-icon"></span>
             </button>
             <form action="/" method="get" >
-        <input
+        {/*<input className='search'
             type="text"
             id="header-search"
             placeholder="Search courses"
             name="s" 
-        />
-        <button type="submit">Search</button>
+    />*/}
+
     </form>
-            <div className="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+        <div className="collapse navbar-collapse right justify-content-between px-lg-3" id="navbarCollapse">
                 <div className="navbar-nav mx-auto py-0">
-                    <a href="index.html" className="nav-item nav-link active">Home</a>
-                    <a href="about.html" className="nav-item nav-link">About</a>
+                    
+                    <a href="about.html" className="nav-item nav-link">About Us</a>
                     <a href="course.html" className="nav-item nav-link">Courses</a>
-                    <a href="contact.html" className="nav-item nav-link">Contact</a>
                 </div>
             </div>
         </nav>

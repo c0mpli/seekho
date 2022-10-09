@@ -497,7 +497,18 @@
     padding-left: 0;
     list-style: none;
   }
-  
+  .search{
+      width: 170%;
+      background-color: #77cbff;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      padding-left: 10%;
+  }
+  .mover{
+    padding-left: 100%;
+  }
+
   .list-inline-item {
     display: inline-block;
   }
@@ -539,7 +550,9 @@
     max-width: 100%;
     height: auto;
   }
-  
+  .right{
+    margin-left: 40%;
+  }
   .figure {
     display: inline-block;
   }
