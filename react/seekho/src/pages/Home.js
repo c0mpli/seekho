@@ -138,7 +138,7 @@ function Home(){
                       <h2>{data.id}</h2>
                       <h3>{data.name}</h3>
                       <p>{data.category}</p>
-                      <a href={data.link}>Learn now</a>
+                      <a href={data.link} target="__blank">Learn now</a>
                     </div>
                   </div>
                 </div>
