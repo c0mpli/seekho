@@ -1,16 +1,17 @@
 import React from "react";
 import './Home.css'
+import data from "../data";
 
 function Home(){
     return(
         <>
     <div className="jumbotron jumbotron-fluid position-relative overlay-bottom" style={{marginBottom: "90px;"}}>
         <div className="container text-center my-5 py-5">
-            <h1 className="text-white mt-4 mb-4">Learn From Home</h1>
-            <h1 className="text-white display-1 mb-5">Education Courses</h1>
+            <h1 className="text-white mt-4 mb-4">Learn any skill</h1>
+            <h1 className="text-white display-1 mb-5">Anytime, Anywhere.</h1>
             <div className="mx-auto mb-5" style={{width: "100%", maxWidth: "600px;"}}>
                 <div className="input-group">
-                    <div className="input-group-prepend">
+                    {/*<div className="input-group-prepend">
                         <button className="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Courses</button>
                         <div className="dropdown-menu">
@@ -18,11 +19,8 @@ function Home(){
                             <a className="dropdown-item" href="#">Courses 2</a>
                             <a className="dropdown-item" href="#">Courses 3</a>
                         </div>
-                    </div>
-                    <input type="text" className="form-control border-light" style={{padding:"30px 25px;"}} placeholder="Keyword" />
-                    <div className="input-group-append">
-                        <button className="btn btn-secondary px-4 px-lg-5">Search</button>
-                    </div>
+    </div>*/}
+                    
                 </div>
             </div>
         </div>
@@ -73,7 +71,7 @@ function Home(){
         </div>
     </div>
 
-    <div className="container-fluid bg-image" style={{margin: "90px 0;"}}>
+    {/*<div className="container-fluid bg-image" style={{margin: "90px 0;"}}>
         <div className="container">
             <div className="row">
                 <div className="col-lg-7 my-5 pt-5 pb-lg-5">
@@ -117,7 +115,7 @@ function Home(){
                 </div>
             </div>
         </div>
-    </div>
+    </div>*/}
 
     <div className="container-fluid px-0 py-5">
         <div className="row mx-0 justify-content-center pt-5">
@@ -127,6 +125,28 @@ function Home(){
                     <h1 className="display-4">Checkout New Releases Of Our Courses</h1>
                 </div>
             </div>
+            <div className="courseWrapper">
+
+        {
+            data && data.map(data=>{
+                return(
+                    
+                    <div class="containers">
+                <div class="card">
+                  <div class="box">
+                    <div class="content">
+                      <h2>{data.id}</h2>
+                      <h3>{data.name}</h3>
+                      <p>{data.category}</p>
+                      <a href={data.link}>Learn now</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            )})
+            
+        }
+        </div>
         </div>
         
         </div>
