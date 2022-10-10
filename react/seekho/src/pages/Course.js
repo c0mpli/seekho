@@ -4,6 +4,12 @@ import {CCard, CCardBody, CCardImage, CCardTitle, CButton, CCardText} from '@cor
 import './Course.css'
 import '../components/Navbar.css'
 function Course(){
+    var temp=[];
+    for(var i in data){
+        temp.push(data[i].category);
+    }
+    var categories =[...new Set(temp)];
+    //alert(categories)
     return(
         <>
         <div className="jumbotron jumbotron-fluid position-relative overlay-bottom" style={{marginBottom: "90px;"}}>
@@ -16,15 +22,12 @@ function Course(){
 	  	<input className="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
 	  	<label className="for-dropdown" for="dropdown">Pick a category <i className="uil uil-arrow-down"></i></label>
   		<div className="section-dropdown"> 
-  			<a href="#">Development<i className="uil uil-arrow-right"></i></a>
-		  	{/*<input className="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
-		  	<label className="for-dropdown-sub" for="dropdown-sub">Dropdown Sub <i className="uil uil-plus"></i></label>
-	  		<div className="section-dropdown-sub"> 
-	  			<a href="#">Dropdown Link <i className="uil uil-arrow-right"></i></a>
-	  			<a href="#">Dropdown Link <i className="uil uil-arrow-right"></i></a>
-    </div>*/}
-  			<a href="#">Media<i className="uil uil-arrow-right"></i></a>
-  			<a href="#">Enterance Exam<i className="uil uil-arrow-right"></i></a>
+        {   categories && categories.map(categories=>{
+            for(var i in categories)
+                return(
+  			        <a href="#">{categories}<i className="uil uil-arrow-right"></i></a>
+		  	
+  			)})}
   		</div>
   	</div>
             </div>
