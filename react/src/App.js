@@ -16,10 +16,9 @@ function App() {
 
     
     <Route path="/seekho/" element={<Home/>}></Route>
-    <Route path="/" element={<Home/>}></Route>
-    <Route path="/course/" element={<Course/>}></Route>
-    <Route path="/course/music/" element={<SpecificCourse category={"Music"}/>}></Route>
-    <Route path="/course/frontend web development/" element={<SpecificCourse category={"Frontend Web Development"}/>}></Route>
+    <Route path="/seekho/course/" element={<Course/>}></Route>
+    <Route path="/seekho/course/music/" element={<SpecificCourse category={"Music"}/>}></Route>
+    <Route path="/seekho/course/frontend web development/" element={<SpecificCourse category={"Frontend Web Development"}/>}></Route>
     </Routes>
     </BrowserRouter>
     </>

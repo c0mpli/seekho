@@ -7,7 +7,7 @@ function Navbar(){
     return(
         <div className="container-fluid p-0">
         <nav className="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="/" className="navbar-brand ml-lg-3">
+            <a href="/seekho" className="navbar-brand ml-lg-3">
                 <h1 className="m-0 text-uppercase text-primary"><i className="fa fa-book-reader mr-3"></i>Seekho</h1>
             </a>
             <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -29,8 +29,8 @@ function Navbar(){
         <div className="collapse navbar-collapse right justify-content-between px-lg-3" id="navbarCollapse">
                 <div className="navbar-nav mx-auto py-0">
                     
-                    <a href="/about" className="nav-item nav-link">About Us</a>
-                    <a href='/course' className="nav-item nav-link">Courses</a>
+                    <a href="/seekho/about" className="nav-item nav-link">About Us</a>
+                    <a href='/seekho/course' className="nav-item nav-link">Courses</a>
                 </div>
             </div>
         </nav>
