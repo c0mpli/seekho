@@ -5,7 +5,6 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Course from './pages/Course';
-import { Music } from './pages/Music';
 import { SpecificCourse } from './pages/SpecificCourse';
 
 function App() {

@@ -7,7 +7,7 @@ export function CategoryCourse(props){
 
     return(
         <>
-                <div className="jumbotron jumbotron-fluid position-relative overlay-bottom" style={{marginBottom: "90px;"}}>
+        <div className="jumbotron jumbotron-fluid position-relative overlay-bottom" style={{marginBottom: "90px;"}}>
         <h1 className="container text-center my-5" style={{color:"white"}}>{props.category}</h1>
         <div className="courseWrapper">
         { 
