@@ -115,7 +115,7 @@ function Home(){
                 </div>
             </div>
         </div>
-    </div>*/}
+    </div>
 
     <div className="container-fluid px-0 py-5">
         <div className="row mx-0 justify-content-center pt-5">
@@ -149,7 +149,7 @@ function Home(){
         </div>
         </div>
         
-        </div>
+        </div>*/}
 
         </>
     )

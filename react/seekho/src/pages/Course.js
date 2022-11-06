@@ -1,7 +1,7 @@
 import React from "react";
 import data from "../data";
-import {CCard, CCardBody, CCardImage, CCardTitle, CButton, CCardText} from '@coreui/react'
 import './Course.css'
+import { Link } from 'react-router-dom';
 import '../components/Navbar.css'
 function Course(){
     var temp=[];
@@ -9,7 +9,10 @@ function Course(){
         temp.push(data[i].category);
     }
     var categories =[...new Set(temp)];
-    //alert(categories)
+
+    function handleCLick(){
+
+    }
     return(
         <>
         <div className="jumbotron jumbotron-fluid position-relative overlay-bottom" style={{marginBottom: "90px;"}}>
@@ -25,15 +28,14 @@ function Course(){
         {   categories && categories.map(categories=>{
             for(var i in categories)
                 return(
-  			        <a href="#">{categories}<i className="uil uil-arrow-right"></i></a>
-		  	
+  			        <Link to={categories}>{categories}<i className="uil uil-arrow-right"></i></Link>
   			)})}
   		</div>
   	</div>
             </div>
         </div>
     </div>
-        <div className="courseWrapper">
+        {/*<div className="courseWrapper">
         {
             data && data.map(data=>{
                 return(
@@ -53,7 +55,7 @@ function Course(){
             )})
             
         }
-        </div>
+        </div>*/}
         
         </>
     )
