@@ -29,8 +29,8 @@ function Navbar(){
         <div className="collapse navbar-collapse right justify-content-between px-lg-3" id="navbarCollapse">
                 <div className="navbar-nav mx-auto py-0">
                     
-                    <a href="/about" className="nav-item nav-link">About Us</a>
-                    <a href='/course' className="nav-item nav-link">Courses</a>
+                    <a href="/seekho/about" className="nav-item nav-link">About Us</a>
+                    <a href='/seekho/course' className="nav-item nav-link">Courses</a>
                 </div>
             </div>
         </nav>
